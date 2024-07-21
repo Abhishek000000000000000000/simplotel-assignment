@@ -1,0 +1,354 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f0f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin-left: 20px;
+    color: black;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 60vh; /* Adjusted for fitting */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.intro-text {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+    background-color:#969ba7;
+    text-align: center;
+}
+
+.intro-text p {
+    width: 30%;
+    margin: 0;
+    color: #333;
+    font-size: 1em;
+}
+
+.gallery {
+    padding: 20px 30px;
+    background-color: #f2f0f5;
+}
+
+#galleryh2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    margin-left: 35px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#gallery-rooms {
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#gallery-rooms img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+#gallery-rooms h3 {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #333;
+}
+
+#gallery-rooms p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0 10px;
+    text-align: left;
+}
+
+#gallery-rooms button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 1px;
+    font-size: 0.9em;
+    align-self: start;
+}
+/*dining*/
+#gallery-dining {
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery-dining img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+#gallery-dining h3 {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #333;
+}
+
+#gallery-dining p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0 10px;
+    text-align: center;
+}
+
+#gallery-dining button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 1px;
+    font-size: 0.9em;
+    align-self: center;
+}
+/*pool */
+#gallery-pool {
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#gallery-pool img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+#gallery-pool h3 {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #333;
+}
+
+#gallery-pool p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0 10px;
+    text-align: end;
+}
+
+#gallery-pool button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 1px;
+    font-size: 0.9em;
+    align-self: flex-end;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/*media grapg*/
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .intro-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-text p {
+        width: 90%;
+        text-align: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gallery-rooms, #gallery-dining, #gallery-pool {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #gallery-rooms button, #gallery-dining button, #gallery-pool button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* For devices with a min-width of 768px and max-width of 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .intro-text p {
+        width: 45%;
+    }
+    
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    #gallery-rooms, #gallery-dining, #gallery-pool {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    #gallery-rooms button, #gallery-dining button, #gallery-pool button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* For devices with a min-width of 737px and max-width of 1446px */
+@media (min-width: 737px) and (max-width: 1446px) {
+    .intro-text p {
+        width: 30%;
+    }
+    
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    #gallery-rooms, #gallery-dining, #gallery-pool {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    #gallery-rooms button, #gallery-dining button, #gallery-pool button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* For devices with a min-width of 737px and max-width of 1150px */
+@media (min-width: 737px) and (max-width: 1150px) {
+    .intro-text p {
+        width: 30%;
+    }
+    
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    #gallery-rooms, #gallery-dining, #gallery-pool {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    #gallery-rooms button, #gallery-dining button, #gallery-pool button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
