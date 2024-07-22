@@ -66,8 +66,8 @@ nav a {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
+    background-color: #3c3636;
+    padding: 15px 80px;
     border-radius: 5px;
 }
 
